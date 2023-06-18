@@ -1,5 +1,7 @@
 import {Error, Loader} from '../components'
 
+
+
 import { allGenres } from '../assets/genre/allGenres';
 
 const Discover = () => {
@@ -15,12 +17,16 @@ const Discover = () => {
                     value=""
                     className='bg-[#090708] text-[#a07e96] p-3 text-sm rounded-lg outline-none sm:mt-0 mt-5'
                 >
-                    {allGenres.map((genre) => 
-                    <option key={genre.id} value={genre.id}>{genre.title}</option>)}
+                    
+                    <option>SORT</option>
+                    <option>A-Z</option>
+                    <option>Z-A</option>
+                    <option>NEWEST - OLDEST </option>
+                    <option>OLDEST - NEWEST </option>
                 </select>
             </div>
 
-            <div className='flex flex-wrap sm:justify-start justify-center gap-8 text-[#e9e2e7]'>
+            <div className='flex flex-wrap sm:justify-start justify-center gap-8'>
             
             </div>
 
